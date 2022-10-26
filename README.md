@@ -1,0 +1,3 @@
+# PhotoManager
+
+![](Resources/PhotoManager.gif)
