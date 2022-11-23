@@ -15,6 +15,7 @@
 		963155AA28E20044002F8989 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963155A928E20044002F8989 /* StartViewController.swift */; };
 		963155AF28E20045002F8989 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 963155AE28E20045002F8989 /* Assets.xcassets */; };
 		963155B228E20045002F8989 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 963155B028E20045002F8989 /* LaunchScreen.storyboard */; };
+		963634E02911EE6100A5506B /* PhotoManagerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963634DF2911EE6100A5506B /* PhotoManagerCollectionViewCell.swift */; };
 		9661D08028E3A3A3009EA366 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9661D07F28E3A3A3009EA366 /* RegisterViewController.swift */; };
 		9661D08228E3A3C3009EA366 /* PhotoManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9661D08128E3A3C3009EA366 /* PhotoManagerViewController.swift */; };
 		9661D08428E3A3D4009EA366 /* AddPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9661D08328E3A3D4009EA366 /* AddPhotoViewController.swift */; };
@@ -35,6 +36,7 @@
 		963155AE28E20045002F8989 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		963155B128E20045002F8989 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		963155B328E20045002F8989 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		963634DF2911EE6100A5506B /* PhotoManagerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoManagerCollectionViewCell.swift; sourceTree = "<group>"; };
 		9661D07F28E3A3A3009EA366 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		9661D08128E3A3C3009EA366 /* PhotoManagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoManagerViewController.swift; sourceTree = "<group>"; };
 		9661D08328E3A3D4009EA366 /* AddPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 		962169B1290899AE005AFF5E /* LikePhotosViewController */ = {
 			isa = PBXGroup;
 			children = (
+				962169682905CBC3005AFF5E /* SavedPhotosCollectionView */,
 				9661D08528E3A3E9009EA366 /* LikePhotosViewController.swift */,
 			);
 			path = LikePhotosViewController;
@@ -162,7 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				9661D08128E3A3C3009EA366 /* PhotoManagerViewController.swift */,
-				962169682905CBC3005AFF5E /* SavedPhotosCollectionView */,
+				963634DF2911EE6100A5506B /* PhotoManagerCollectionViewCell.swift */,
 			);
 			path = PhotoViewController;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 				9661D08628E3A3E9009EA366 /* LikePhotosViewController.swift in Sources */,
 				963155AA28E20044002F8989 /* StartViewController.swift in Sources */,
 				9661D08428E3A3D4009EA366 /* AddPhotoViewController.swift in Sources */,
+				963634E02911EE6100A5506B /* PhotoManagerCollectionViewCell.swift in Sources */,
 				9621696529005113005AFF5E /* PossibleErrors.swift in Sources */,
 				962169672905C982005AFF5E /* SavedPhotosCollectionView.swift in Sources */,
 				9661D08028E3A3A3009EA366 /* RegisterViewController.swift in Sources */,

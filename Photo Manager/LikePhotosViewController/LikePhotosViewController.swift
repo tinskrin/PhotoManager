@@ -16,8 +16,9 @@ protocol LikePhotoDelegate: AnyObject {
 
 class LikePhotosViewController: UIViewController {
 
+	var startIndexPath: IndexPath?
 	private let fonImage = UIImageView(frame: UIScreen.main.bounds)
-	private var viewModels: [PhotoViewModel] = []
+	private var viewModels: [PhotoViewModel] = PhotoStorage.shared.photos
 	private var currentViewModel: PhotoViewModel = .init()
 	private let commentField: UITextView = {
 		let commentField = UITextView()
@@ -50,14 +51,21 @@ class LikePhotosViewController: UIViewController {
 		setupView()
 	}
 
+	override func viewDidAppear(_ animated: Bool) {
+		super.viewDidAppear(animated)
+		if let startIndexPath = startIndexPath {
+			savedPhotosCollectionView.scrollToItem(at: startIndexPath, at: .centeredHorizontally, animated: true)
+			commentField.text = viewModels[startIndexPath.row].text
+		}
+	}
+
 	@objc func tap(sender: UITapGestureRecognizer) {
 		if commentField.isFirstResponder {
 			commentField.resignFirstResponder()
 		}
 	}
-
+	
 	private func setupView() {
-		viewModels = PhotoStorage.shared.photos
 		if viewModels.isEmpty {
 			commentField.isHidden = true
 			presentAlert()

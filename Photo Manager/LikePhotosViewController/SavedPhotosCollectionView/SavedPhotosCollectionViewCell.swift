@@ -29,7 +29,7 @@ class SavedPhotosCollectionViewCell: UICollectionViewCell {
 	}
 
 	private func setupView() {
-		contentView.addSubview(mainImageView)
+		addSubview(mainImageView)
 	}
 
 	private func setupConstraints() {

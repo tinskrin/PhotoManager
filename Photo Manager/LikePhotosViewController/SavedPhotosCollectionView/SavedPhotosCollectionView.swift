@@ -43,7 +43,7 @@ extension SavedPhotosCollectionView: UICollectionViewDataSource {
 	}
 
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-		let cell = dequeueReusableCell(withReuseIdentifier: SavedPhotosCollectionViewCell.reuseId, for: indexPath) as! SavedPhotosCollectionViewCell
+		guard let cell = dequeueReusableCell(withReuseIdentifier: SavedPhotosCollectionViewCell.reuseId, for: indexPath) as? SavedPhotosCollectionViewCell else { return UICollectionViewCell() }
 		if let imageName = photoDelegate?.viewModelForItemAt(indexPath).imageName {
 			let image = loadImage(fileName: imageName)
 			cell.mainImageView.image = image
